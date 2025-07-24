@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlueRanks Staff</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a1f44;
+      color: #cce0ff;
+    }
+    header {
+      background: #103470;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #70a0ff;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #1c3a7a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #a0c4ff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      border-bottom: 2px solid #70a0ff;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      color: #a8c4ff;
+    }
+    ul.staff-ranks {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    ul.staff-ranks li {
+      background: #1a2a55;
+      flex: 1 1 180px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #2e4a95aa;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #bbd4ff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #5577cc;
+      border-top: 1px solid #234a9b;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      ul.staff-ranks {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>BlueRanks Staff</header>
+  <nav>
+    <a href="#staff-ranks">Staff Ranks</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="staff-ranks">
+      <h2>Staff Ranks</h2>
+      <ul class="staff-ranks">
+        <li>Mod</li>
+        <li>Admin</li>
+        <li>Dev</li>
+        <li>Co-Owner</li>
+        <li>Owner</li>
+      </ul>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Moderation tools & permissions</li>
+        <li>Server management capabilities</li>
+        <li>Exclusive staff chat channels</li>
+        <li>Access to admin commands</li>
+        <li>Development & plugin management</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For staff inquiries or applications, join our <a href="https://discord.gg/yourdiscordlink" target="_blank" style="color:#70a0ff;">Discord server</a>.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 BlueRanks. All rights reserved.
+  </footer>
+</body>
+</html>
