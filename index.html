@@ -3,126 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlueRanks Staff</title>
+  <title>BlueRanks Staff - Home</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: #0a1f44;
       color: #cce0ff;
-    }
-    header {
-      background: #103470;
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      font-size: 2.5rem;
-      font-weight: bold;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
       color: #70a0ff;
-      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      user-select: none;
+      text-shadow: 0 0 8px #70a0ff88;
     }
     nav {
-      background: #1c3a7a;
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 10px 0;
+      gap: 2rem;
+      margin-top: 2rem;
     }
     nav a {
-      color: #a0c4ff;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffffff;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      border-bottom: 2px solid #70a0ff;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-      color: #a8c4ff;
-    }
-    ul.staff-ranks {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    ul.staff-ranks li {
-      background: #1a2a55;
-      flex: 1 1 180px;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px #2e4a95aa;
-      text-align: center;
+      color: #a0c4ff;
       font-weight: 700;
-      font-size: 1.2rem;
-      color: #bbd4ff;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 1.3rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      background-color: #1c3a7a;
+      box-shadow: 0 0 10px #3763ccaa;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+    nav a:hover,
+    nav a:focus-visible {
+      background-color: #3763cc;
+      color: #ffffff;
+      outline: none;
+      box-shadow: 0 0 15px #70a0ffcc;
     }
     footer {
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 0.9rem;
-      color: #5577cc;
-      border-top: 1px solid #234a9b;
-      margin-top: 60px;
-    }
-    @media (max-width: 600px) {
-      ul.staff-ranks {
-        flex-direction: column;
-        align-items: center;
-      }
+      margin-top: auto;
+      padding: 1rem 0;
+      color: #5577ccaa;
+      user-select: none;
     }
   </style>
 </head>
 <body>
-  <header>BlueRanks Staff</header>
+  <h1>BlueRanks Staff</h1>
   <nav>
-    <a href="#staff-ranks">Staff Ranks</a>
-    <a href="#features">Features</a>
-    <a href="#contact">Contact</a>
+    <a href="pages/staff-ranks.html">Staff Ranks</a>
+    <a href="pages/features.html">Features</a>
+    <a href="pages/contact.html">Contact</a>
   </nav>
-  <main>
-    <section id="staff-ranks">
-      <h2>Staff Ranks</h2>
-      <ul class="staff-ranks">
-        <li>Mod</li>
-        <li>Admin</li>
-        <li>Dev</li>
-        <li>Co-Owner</li>
-        <li>Owner</li>
-      </ul>
-    </section>
-    <section id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Moderation tools & permissions</li>
-        <li>Server management capabilities</li>
-        <li>Exclusive staff chat channels</li>
-        <li>Access to admin commands</li>
-        <li>Development & plugin management</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>For staff inquiries or applications, join our <a href="https://discord.gg/yourdiscordlink" target="_blank" style="color:#70a0ff;">Discord server</a>.</p>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 BlueRanks. All rights reserved.
-  </footer>
+  <footer>&copy; 2025 BlueRanks. All rights reserved.</footer>
 </body>
 </html>
